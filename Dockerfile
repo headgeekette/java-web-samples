@@ -1,5 +1,5 @@
-# FROM tomcat:9.0.59-jdk11-openjdk-buster
-FROM tomcat:10.0.18-jdk11-openjdk-bullseye
+FROM tomcat:9.0.59-jdk11-openjdk-buster
+# FROM tomcat:10.0.18-jdk11-openjdk-bullseye
 
 RUN apt-get update && apt-get install -y --no-install-recommends \ 
     git \
