@@ -1,0 +1,27 @@
+version: '3.2'
+
+services:
+  tomcat:
+    build: .
+    ports:
+      - "8080:8080"
+    expose:
+      - "8080"
+    volumes:
+      - type: bind
+        source: .
+        target: /home/workspace
+    depends_on:
+      - database
+  database:
+    image: "mysql:8.0.28-debian"
+    restart: always
+    env_file:
+      - ./database.env
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - ./00-database/data:/docker-entrypoint-initdb.d
