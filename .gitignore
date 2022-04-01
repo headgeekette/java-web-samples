@@ -1,2 +1,4 @@
 *.war
 **/target
+.vscode
+00-database/MySQL-Classic-Models-Database-Diagram-PDF-A4.pdf

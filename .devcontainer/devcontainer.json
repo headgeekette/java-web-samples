@@ -25,7 +25,9 @@
 	"extensions": [
 		"GabrielBB.vscode-lombok",
 		"vscjava.vscode-java-pack",
-		"jebbs.plantuml"
+		"jebbs.plantuml",
+		"redhat.vscode-xml",
+		"esbenp.prettier-vscode"
 	]
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
