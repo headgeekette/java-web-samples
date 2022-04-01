@@ -3,21 +3,16 @@
 <!DOCTYPE html>
 
 <html>
-
-<body>
-
+  <body>
     <center>
-        <h1>Available Types</h1>
+      <h1>Available Types</h1>
 
-        <br>We have <br><br>
-        
-        <c:out value = "${greetings}"/>
+      <br />We have <br /><br />
 
-        <c:forEach var="employee" items="${listEmployee}">
-            <p>${employee.id} - ${employee.fullName}</p>
-    </c:forEach>
+      <c:forEach var="employee" items="${listEmployee}">
+        <p>${employee.id} - ${employee.fullName}</p>
+      </c:forEach>
+      
     </center>
-
-</body>
-
+  </body>
 </html>
